@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact SkyNest</title>
+    <link rel="stylesheet" href="pages.css">
+    <script src="pages.js" defer></script>
+</head>
+<body class="subpage">
+    <header class="subpage-header">
+        <div class="subpage-header-inner">
+            <a class="subpage-brand" href="index.html#top" aria-label="SkyNest home">
+                <img src="assets/SkyNest House Logo.png" alt="SkyNest">
+            </a>
+            <nav class="subpage-nav" aria-label="Main navigation">
+                <a href="index.html#top">Home</a>
+                <a href="accommodation.html#accommodation">Accommodation</a>
+                <a href="facilities.html#facilities">Facilities</a>
+                <a href="packages.html#packages">Packages</a>
+                <a href="about.html#about">About</a>
+                <a class="current" href="contact.html#contact" aria-current="page">Contact</a>
+                <a class="subpage-enquire" href="contact.html#contact">Enquire Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="subpage-main contact-page" id="contact">
+        <section class="page-heading contact-heading">
+            <h1>Contact SkyNest</h1>
+            <p>Use this demonstration form to enter your enquiry details. It does not send or store enquiries.</p>
+        </section>
+
+        <div class="contact-layout">
+            <form class="enquiry-form" id="enquiryForm">
+                <label for="enquiry-name">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="enquiry-name" name="name" placeholder="Enter your full name" autocomplete="name" required>
+
+                <label for="enquiry-email">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="enquiry-email" name="email" placeholder="Enter your email address" autocomplete="email" required>
+
+                <label for="enquiry-phone">Phone Number <span class="optional">(Optional)</span></label>
+                <input type="tel" id="enquiry-phone" name="phone" placeholder="Enter your phone number" autocomplete="tel">
+
+                <label for="package-interest">Package of Interest</label>
+                <select id="package-interest" name="package">
+                    <option value="">Select a package</option>
+                    <option value="Premium Stay">Premium Stay</option>
+                    <option value="Standard Stay">Standard Stay</option>
+                    <option value="Short-Term Stay">Short-Term Stay</option>
+                    <option value="Custom Packages">Custom Packages</option>
+                </select>
+
+                <label for="enquiry-subject">Subject <span aria-hidden="true">*</span></label>
+                <input type="text" id="enquiry-subject" name="subject" placeholder="Enter the subject of your enquiry" required>
+
+                <label for="enquiry-message">Message <span aria-hidden="true">*</span></label>
+                <textarea id="enquiry-message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+
+                <button class="subpage-button submit-enquiry" type="submit">Submit Enquiry</button>
+                <p class="form-response" id="enquiry-response" aria-live="polite"></p>
+                <p class="form-note">This demonstration form does not send or store enquiries.</p>
+            </form>
+
+            <aside class="contact-help">
+                <h2>How Can We Help?</h2>
+                <p>Use the form to draft questions about accommodation packages, facilities, or co-living. It does not send or store enquiries.</p>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="subpage-footer">
+        <a href="index.html#top" aria-label="SkyNest home"><img src="assets/SkyNest House Logo.png" alt="SkyNest"></a>
+        <span>Co-Living Spaces</span>
+        <small>© 2026 SkyNest Co-Living Spaces. All rights reserved.</small>
+    </footer>
+</body>
+</html>

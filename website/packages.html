@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accommodation Packages | SkyNest</title>
+    <link rel="stylesheet" href="pages.css">
+    <script src="pages.js" defer></script>
+</head>
+<body class="subpage packages-subpage">
+    <header class="subpage-header">
+        <div class="subpage-header-inner">
+            <a class="subpage-brand" href="index.html#top" aria-label="SkyNest home">
+                <img src="assets/SkyNest House Logo.png" alt="SkyNest">
+            </a>
+            <nav class="subpage-nav" aria-label="Main navigation">
+                <a href="index.html#top">Home</a>
+                <a href="accommodation.html#accommodation">Accommodation</a>
+                <a href="facilities.html#facilities">Facilities</a>
+                <a class="current" href="packages.html#packages" aria-current="page">Packages</a>
+                <a href="about.html#about">About</a>
+                <a href="contact.html#contact">Contact</a>
+                <a class="subpage-enquire" href="contact.html#contact">Enquire Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="subpage-main packages-page" id="packages">
+        <section class="page-heading">
+            <h1>Our Accommodation Packages</h1>
+            <p>SkyNest offers different co-living accommodation options designed to suit a range of living arrangements and needs.</p>
+        </section>
+
+        <section class="package-grid" aria-label="Accommodation packages">
+            <article class="package-card" id="premium-stay">
+                <img src="assets/package-premium.jpg" alt="Bright premium-style accommodation interior">
+                <div class="package-card-copy">
+                    <h2>Premium Stay</h2>
+                    <p>Spacious private studio apartment with enhanced amenities and privacy.</p>
+                    <ul class="package-features">
+                        <li>Private studio apartment</li>
+                        <li>Weekly cleaning service</li>
+                        <li>Utilities included</li>
+                        <li>High-speed internet included</li>
+                        <li>Access to all facilities</li>
+                        <li>Monthly community events pass</li>
+                    </ul>
+                    <p class="package-price">From [Monthly price to be confirmed] / month</p>
+                    <details>
+                        <summary class="subpage-button">View Details</summary>
+                        <p>Spacious private rooms with enhanced amenities and privacy in a thoughtfully designed co-living environment.</p>
+                    </details>
+                </div>
+            </article>
+            <article class="package-card" id="standard-stay">
+                <img src="assets/package-standard.jpg" alt="Comfortable standard-style accommodation interior">
+                <div class="package-card-copy">
+                    <h2>Standard Stay</h2>
+                    <p>Comfortable private bedroom in a shared apartment with essential amenities.</p>
+                    <ul class="package-features">
+                        <li>Private bedroom in a shared apartment</li>
+                        <li>Fortnightly cleaning</li>
+                        <li>Utilities included</li>
+                        <li>Access to co-working space</li>
+                        <li>Shared kitchen and lounge</li>
+                    </ul>
+                    <p class="package-price">From [Monthly price to be confirmed] / month</p>
+                    <details>
+                        <summary class="subpage-button">View Details</summary>
+                        <p>Comfortable private rooms with all essential amenities for everyday living.</p>
+                    </details>
+                </div>
+            </article>
+            <article class="package-card" id="short-term-stay">
+                <img src="assets/package-short-term.jpg" alt="Light-filled accommodation interior for a short-term stay">
+                <div class="package-card-copy">
+                    <h2>Short-Term Stay</h2>
+                    <p>Flexible accommodation options suited to shorter stays and changing needs.</p>
+                    <ul class="package-features">
+                        <li>Flexible booking for 1-4 weeks</li>
+                        <li>Furnished room</li>
+                        <li>Utilities included</li>
+                        <li>Limited access to shared facilities</li>
+                    </ul>
+                    <p class="package-price">From [Weekly price to be confirmed] / week</p>
+                    <details>
+                        <summary class="subpage-button">View Details</summary>
+                        <p>Flexible accommodation options suited to shorter stays and changing needs.</p>
+                    </details>
+                </div>
+            </article>
+            <article class="package-card" id="custom-packages">
+                <img src="assets/package-custom.jpg" alt="Welcoming accommodation interior for a custom package">
+                <div class="package-card-copy">
+                    <h2>Custom Packages</h2>
+                    <p>Tailored accommodation arrangements for specific living requirements.</p>
+                    <ul class="package-features">
+                        <li>Available for corporate bookings</li>
+                        <li>Available for long-term stays</li>
+                        <li>Available for residents with accessibility needs</li>
+                        <li>Contact SkyNest to arrange a custom package</li>
+                    </ul>
+                    <p class="package-price">Price available on enquiry</p>
+                    <details>
+                        <summary class="subpage-button">View Details</summary>
+                        <p>Tailored accommodation arrangements for residents with specific living requirements.</p>
+                    </details>
+                </div>
+            </article>
+        </section>
+
+        <section class="package-advice" aria-labelledby="package-advice-heading">
+            <h2 id="package-advice-heading">Package Advice</h2>
+            <p>Select the package that best matches your accommodation needs.</p>
+            <div class="package-advice-controls">
+                <label for="package-advice-choice">Choose a package:</label>
+                <select id="package-advice-choice">
+                    <option value="">Select a package</option>
+                    <option value="Premium Stay">Premium Stay</option>
+                    <option value="Standard Stay">Standard Stay</option>
+                    <option value="Short-Term Stay">Short-Term Stay</option>
+                    <option value="Custom Packages">Custom Packages</option>
+                </select>
+                <button class="subpage-button" id="get-package-advice" type="button">Get Advice</button>
+            </div>
+            <p id="package-advice-response" aria-live="polite"></p>
+        </section>
+
+        <section class="package-contact-cta">
+            <span class="contact-cta-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m4 7 8 6 8-6"></path></svg>
+            </span>
+            <div>
+                <h2>Find the Right Package for You</h2>
+                <p>Not sure which package is best for your needs? Enquire now and our team will help you find the perfect fit.</p>
+            </div>
+            <div class="subpage-actions">
+                <a class="subpage-button" href="contact.html#contact">Enquire Now</a>
+                <a class="subpage-button subpage-button-outline" href="facilities.html#facilities">Explore Facilities</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="subpage-footer">
+        <a href="index.html#top" aria-label="SkyNest home"><img src="assets/SkyNest House Logo.png" alt="SkyNest"></a>
+        <span>Co-Living Spaces</span>
+        <small>© 2026 SkyNest Co-Living Spaces. All rights reserved.</small>
+    </footer>
+</body>
+</html>
